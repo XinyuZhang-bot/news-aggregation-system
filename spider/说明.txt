@@ -1,0 +1,42 @@
+﻿#####################
+#######爬虫项目#######
+#####################
+
+
+1.config/config.ini文件自定义参数：
+
+[db] ------------------------- 落库表的参数设置
+type = mysql
+host = 127.0.0.1
+port = 3306
+database = project_db
+user = root
+password = root
+table_name = xxx
+
+[option_once]   ---------- 为启动前一次性设置的参数，启动后不要再修改，根据每个爬虫接口的key值，和落库表的字段重命名，一一对应设置，英文逗号中间不要有空格，unique_id保持不动
+columns_key = ['unique_id','title','img','type','release_date','rate','rate_num','film_length','director','actor','description']
+columns_rename = ['unique_id','movie_name','film_cover','movie_type','release_year','movie_rating','number_of_scores','film_length','film_director','principal_actor','film_introduction']
+
+[option]  ------ 自定义参数，page，size ，tablename必传，output_csv写入csv文件和write_database写入数据库，按需配置，type是个性化参数
+page = 1
+size = 10
+type =
+output_csv = True
+write_database = True
+tablename = spider_rent_data
+
+[record] ------- 记录上次爬取信息
+last_page = 1
+last_size = 10
+last_type = 剧情
+
+2.app.py 文件def_spider函数部分，url替换成官方的网站，header里cookie等替换成本地个性化参数，但整体不会执行，
+后续部分为通用爬虫，不需要变动；
+
+
+3.创建表时，设置unique_id为唯一键，字段长度设置长一点，太短存不下；
+
+
+4.启动后cache_data.pkl不要删除了，里面会记录爬取历史参数信息，
+重置项目时可删除，否则数据库中已有数据时，不会再写入；

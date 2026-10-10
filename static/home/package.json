@@ -1,0 +1,49 @@
+{
+  "name": "client_home",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "@vue-office/docx": "^1.6.3",
+    "@vue-office/excel": "^1.7.14",
+    "@vue-office/pptx": "^1.0.1",
+    "aieditor": "^1.4.2",
+    "axios": "^0.21.1",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "dijkstrajs": "^1.0.3",
+    "element-ui": "^2.15.0",
+    "jquery": "^3.6.0",
+    "mammoth": "^1.9.1",
+    "markdown-it": "^14.1.0",
+    "qrcode": "^1.5.4",
+    "sass": "^1.99.0",
+    "vue": "^2.6.11",
+    "vue-demi": "^0.14.6",
+    "vue-json-excel": "^0.3.0",
+    "vue-piczoom": "^1.0.6",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "swiper": "^3.4.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

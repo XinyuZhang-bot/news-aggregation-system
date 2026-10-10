@@ -1,0 +1,2 @@
+# 爬虫服务定时任务使用 Python 标准库（threading），无需 pip 安装 APScheduler。
+# 其余依赖以项目环境为准（Flask、pandas、requests 等）。

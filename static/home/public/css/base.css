@@ -1,0 +1,110 @@
+﻿.ql-align-center{
+	width: auto !important;
+	text-align: center;
+}
+.ql-align-right{
+	text-align: right;
+}
+.ql-indent-1 {
+    padding-left: 0px !important;
+    text-indent: 1em !important;
+}
+.ql-indent-2 {
+    padding-left: 0px !important;
+    text-indent: 2em !important;
+}
+.ql-indent-3 {
+    padding-left: 0px !important;
+    text-indent: 3em !important;
+}
+.ql-indent-4 {
+    padding-left: 0px !important;
+    text-indent: 4em !important;
+}
+.ql-indent-5 {
+    padding-left: 0px !important;
+    text-indent: 5em !important;
+}
+.ql-indent-6 {
+    padding-left: 0px !important;
+    text-indent: 6em !important;
+}
+.ql-indent-7 {
+    padding-left: 0px !important;
+    text-indent: 7em !important;
+}
+.ql-indent-8 {
+    padding-left: 0px !important;
+    text-indent: 8em !important;
+}
+.hot_goods .list_goods_hot .list .goods{
+	width: 20%;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/c/font_4989096_vynlivnkshh.woff2?t=1754013345806') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4989096_vynlivnkshh.woff?t=1754013345806') format('woff'),
+       url('//at.alicdn.com/t/c/font_4989096_vynlivnkshh.ttf?t=1754013345806') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.diy_list_box_wrap{
+    position: relative;
+}
+.diy-main-title .diy_title,.diy-sub-title .diy_title,.diy-tag-type .diy_title,.diy-list-price .diy_title,.diy-create-by .diy_title,.score .diy_title{
+    display: none;
+}
+.diy-main-title{
+    font-size: 16px;
+    font-weight: bold;
+}
+.diy-sub-title{
+    font-size: 13px;
+    color: #999;
+}
+.diy-tag-type{
+    background: #f16262;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    padding: 2px 5px;
+    font-size: 12px;
+    top: 10px;
+    right: 10px;
+}
+.diy-list-price .diy_field{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f16262 !important;
+}
+.diy-list-price .diy_field::before{
+    content: "￥";
+}
+.diy-list-time{
+    font-size: 13px;
+}
+.diy-list-time .diy_title::before{
+    font-family: "iconfont";
+    content: "\e673";
+    color: currentColor;
+}
+.diy-create-by{
+    font-size: 13px;
+}
+.diy-create-by .diy-create-avatar{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    object-fit: cover;
+}

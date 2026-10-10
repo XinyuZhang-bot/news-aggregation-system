@@ -1,0 +1,20 @@
+{
+  "sources": {
+    "tencent": {
+      "enabled": false,
+      "interval_minutes": 5
+    },
+    "people": {
+      "enabled": false,
+      "interval_minutes": 4
+    },
+    "xinhuanet": {
+      "enabled": false,
+      "interval_minutes": 3
+    },
+    "chinanews": {
+      "enabled": false,
+      "interval_minutes": 2
+    }
+  }
+}

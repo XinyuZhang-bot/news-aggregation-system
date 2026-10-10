@@ -1,0 +1,218 @@
+/* 登录 / 注册 — 透明毛玻璃 */
+.auth-page.sign_in {
+	background: url("../img/auth-bg.jpg") no-repeat center center fixed !important;
+	background-size: cover !important;
+}
+
+.auth-page {
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	background: url("../img/auth-bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.auth-page .glass-card {
+	position: relative;
+	width: 100%;
+	max-width: 420px;
+	padding: 36px 40px 28px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.42);
+	border-radius: 16px;
+	backdrop-filter: blur(22px);
+	-webkit-backdrop-filter: blur(22px);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+	transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.auth-page .glass-card:hover {
+	box-shadow: 0 12px 42px rgba(0, 0, 0, 0.28);
+	border-color: rgba(255, 255, 255, 0.55);
+}
+
+.auth-page .glass-card--wide {
+	max-width: 520px;
+	max-height: 92vh;
+	overflow-y: auto;
+}
+
+.auth-page .auth-title {
+	font-size: 1.35em;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 18px;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+.auth-page .auth-form .el-form-item {
+	margin-bottom: 16px;
+}
+
+.auth-page .auth-form .el-form-item__label {
+	color: rgba(255, 255, 255, 0.92);
+	font-weight: 500;
+}
+
+.auth-page .auth-form .el-form-item__label::before {
+	color: #ff8a80 !important;
+}
+
+.auth-page .auth-form .el-input__inner,
+.auth-page .auth-form .el-select .el-input__inner {
+	background: rgba(255, 255, 255, 0.12) !important;
+	border: 1px solid rgba(255, 255, 255, 0.38) !important;
+	color: #fff !important;
+	border-radius: 8px;
+}
+
+.auth-page .auth-form .el-input__inner::placeholder {
+	color: rgba(255, 255, 255, 0.55);
+}
+
+.auth-page .auth-form .el-input__inner:focus,
+.auth-page .auth-form .el-select .el-input.is-focus .el-input__inner {
+	border-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* 浏览器自动填充：与手动输入一致的半透明底 */
+.auth-page .form-control:-webkit-autofill,
+.auth-page .form-control:-webkit-autofill:hover,
+.auth-page .form-control:-webkit-autofill:focus,
+.auth-page .form-control:-webkit-autofill:active,
+.auth-page .custom-select:-webkit-autofill,
+.auth-page .auth-form .el-input__inner:-webkit-autofill,
+.auth-page .auth-form .el-input__inner:-webkit-autofill:hover,
+.auth-page .auth-form .el-input__inner:-webkit-autofill:focus,
+.auth-page .auth-form .el-input__inner:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.12) inset !important;
+	box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.12) inset !important;
+	-webkit-text-fill-color: #fff !important;
+	caret-color: #fff;
+	transition: background-color 99999s ease-out 0s;
+}
+
+.auth-page .auth-form .el-form-item__error {
+	color: #ff8a80;
+	font-size: 13px;
+	font-weight: 600;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.auth-page .auth-form .el-select .el-input .el-select__caret {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.auth-page .geetest_box {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	margin: 8px 0 16px;
+	width: 100%;
+}
+
+.auth-page .geetest_box_title {
+	flex-shrink: 0;
+	width: auto;
+	min-width: 4.5em;
+	white-space: nowrap;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.92);
+	text-align: left;
+	line-height: 1.4;
+}
+
+.auth-page .geetest_box_title::before {
+	content: "*";
+	color: #ff3131;
+	margin-right: 4px;
+}
+
+.auth-page .geetest_box_content {
+	flex: 1;
+	min-width: 0;
+}
+
+.auth-page .auth-btns {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+	margin-top: 8px;
+	flex-wrap: wrap;
+}
+
+.auth-page .auth-btn {
+	flex: 1;
+	min-width: 120px;
+	height: 40px;
+	border: none;
+	border-radius: 40px;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	cursor: pointer;
+	transition: background 0.2s, opacity 0.2s;
+}
+
+.auth-page .auth-btn--primary {
+	background: #fff;
+	color: #1a1a1a;
+}
+
+.auth-page .auth-btn--primary:hover {
+	background: #ffffea;
+}
+
+.auth-page .auth-btn--ghost {
+	background: rgba(255, 255, 255, 0.15);
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.auth-page .auth-btn--ghost:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+.auth-page .geetest_box_content .el-input__inner {
+	background: rgba(255, 255, 255, 0.22) !important;
+	border: 1px solid rgba(255, 255, 255, 0.65) !important;
+	color: #fff !important;
+}
+
+.auth-page .geetest_box_content .el-input__inner::placeholder {
+	color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.auth-page #canvas,
+.auth-page .verification-canvas {
+	border: 1px solid rgba(255, 255, 255, 0.85) !important;
+	border-radius: 6px;
+	background-color: #ffffff !important;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+/* 覆盖 diy.css 全局 .icon { width: 100% }，登录输入框图标靠右显示 */
+.auth-page.login-page .input-box .field-icon,
+.auth-page.login-page .input-box .field-icon-toggle {
+	width: auto !important;
+	height: auto;
+	background: none !important;
+	background-size: unset !important;
+}
+
+@media (max-width: 480px) {
+	.auth-page .glass-card {
+		padding: 28px 22px 22px;
+		border-radius: 12px;
+	}
+
+	.auth-page .glass-card--wide {
+		max-height: none;
+	}
+}
